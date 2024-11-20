@@ -469,12 +469,13 @@ model_info = {
         "tokenizer": tokenizer_gpt35,
         "token_cnt": get_token_num_gpt35,
     },
+    # Now gemini-1.5-pro is redirected to gemini-1.5-pro-002
     "gemini-1.5-pro": {
         "fn_with_ui": genai_ui,
         "fn_without_ui": genai_noui,
         "endpoint": gemini_endpoint,
         "has_multimodal_capacity": True,
-        "max_token": 1024 * 204800,
+        "max_token": 1024 * 2048,
         "tokenizer": tokenizer_gpt35,
         "token_cnt": get_token_num_gpt35,
     },
@@ -483,11 +484,19 @@ model_info = {
         "fn_without_ui": genai_noui,
         "endpoint": gemini_endpoint,
         "has_multimodal_capacity": True,
-        "max_token": 1024 * 204800,
+        "max_token": 1024 * 1024,
         "tokenizer": tokenizer_gpt35,
         "token_cnt": get_token_num_gpt35,
     },
-
+    "gemini-1.5-flash-8b": {
+        "fn_with_ui": genai_ui,
+        "fn_without_ui": genai_noui,
+        "endpoint": gemini_endpoint,
+        "has_multimodal_capacity": True,
+        "max_token": 1024 * 1024,
+        "tokenizer": tokenizer_gpt35,
+        "token_cnt": get_token_num_gpt35,
+    },
     # cohere
     "cohere-command-r-plus": {
         "fn_with_ui": cohere_ui,

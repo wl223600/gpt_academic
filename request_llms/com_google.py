@@ -206,7 +206,7 @@ class GoogleChatInit:
             "contents": messages,
             "generationConfig": {
                 # "maxOutputTokens": llm_kwargs.get("max_token", 1024),
-                "stopSequences": str(llm_kwargs.get("stop", "")).split(" "),
+                # "stopSequences": str(llm_kwargs.get("stop", "")).split(" "),
                 "temperature": llm_kwargs.get("temperature", 1),
                 "topP": llm_kwargs.get("top_p", 0.8),
                 "topK": 10,
